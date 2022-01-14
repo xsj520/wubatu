@@ -1,0 +1,13 @@
+sed -i 's/192.168.1.1/192.168.3.3/g' ~/lede/package/base-files/files/bin/config_generate
+
+sudo apt-get autoremove open-vm-tools
+sudo apt-get install open-vm-tools
+sudo apt-get install open-vm-tools-desktop
+
+
+sudo apt upgrade
+
+
+src-git helloworld https://github.com/fw876/helloworld
+
+git clone --depth=1 https://github.com/xsj520/rt-n56u.git /opt/rt-n56u
